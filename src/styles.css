@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+html,
+body {
+  font-family: 'Righteous', cursive;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: aliceblue;
+  border-radius: 5px;
+  width: 1200px;
+
+}
+
+.header{
+  background: cadetblue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: aliceblue;
+  text-align: center;
+  
+}
+
+.header > h1 {
+  text-shadow: 5px 5px 5px #000;
+}
+
+.header a {
+  color: oldlace;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.select{
+  text-align: center;
+  margin-top: 35px;
+}
+
+.select select {
+  width: 40%;
+  outline: none;
+  background: oldlace;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.6rem;
+  padding: 5px;
+}
+.date{
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  padding: 5px;
+  font-size: 0.6rem;
+}
+
+.data{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  font-size: 0.6rem;
+  color: #333;
+}
+
+.data__details{
+  padding: 5px;
+  width: 25%;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px cadetblue;
+}
+
+.data__details h3 {
+  text-decoration: underline;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.buttons button{
+  outline: none;
+  width: 25%;
+  height: 40px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 0.6rem;
+  background: cadetblue;
+  color:aliceblue;
+  border-radius: 3px;
+  border:none;
+  cursor: pointer;
+}
+
+.buttons button:hover{
+  background: aliceblue;
+  color: cadetblue;
+  box-shadow: 0 5px 0 0 ;
+}
+
+.loading {
+  margin-top: 35px;
+  color: cadetblue;
+  text-align: center;
+  animation: fadeIn ease 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
